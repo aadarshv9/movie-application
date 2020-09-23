@@ -66,3 +66,39 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+# MOVIE APPLICATION
+ 
+OVERIEW :-
+
+- A react movie application built to fetch movies details using an API.
+
+API :-
+- For more details on the API used, visit this link: https://api.themoviedb.org/
+
+NPM PACKAGE :-
+
+- 
+- react to create react application using components.
+- react-dom to render the UI.
+- redux to to create a store.
+- redux-thunk to handle asynchronous action.
+- redux-logger to log the actions.
+- react-redux to fetch 'connect' method using which we can connect our components to store.
+
+API ENDPOINTS DETAIL :-
+
+--> https://api.themoviedb.org/3/search/movie?api_key={API_KEY}&language=en-US&query=${searchText}&page=1&include_adult=false
+    -- This endpoint is used to fetch movies using their name.
+    -- Need to pass an API key generated from the API website in parameter 'api_key'.
+    -- Need to pass a movie name in parameter 'query'.
+
+--> https://api.themoviedb.org/3/movie/${movie.id}/reviews?api_key={API_KEY}&language=en-US&page=1
+    -- This endpoint is used to fetch movies reviews.
+    -- Need to pass an API key generated from the API website in parameter 'api_key'.
+    -- Need to pass a movie ID in the url'.
+
+Run Project :-
+
+- npm install  --> to install dependencies
+- npm start     --> to run the server on localhost:3000
