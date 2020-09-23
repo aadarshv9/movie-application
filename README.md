@@ -78,7 +78,6 @@ API :-
 
 NPM PACKAGE :-
 
-- 
 - react to create react application using components.
 - react-dom to render the UI.
 - redux to to create a store.
@@ -89,11 +88,13 @@ NPM PACKAGE :-
 API ENDPOINTS DETAIL :-
 
 --> https://api.themoviedb.org/3/search/movie?api_key={API_KEY}&language=en-US&query=${searchText}&page=1&include_adult=false
+
     -- This endpoint is used to fetch movies using their name.
     -- Need to pass an API key generated from the API website in parameter 'api_key'.
     -- Need to pass a movie name in parameter 'query'.
 
 --> https://api.themoviedb.org/3/movie/${movie.id}/reviews?api_key={API_KEY}&language=en-US&page=1
+
     -- This endpoint is used to fetch movies reviews.
     -- Need to pass an API key generated from the API website in parameter 'api_key'.
     -- Need to pass a movie ID in the url'.
