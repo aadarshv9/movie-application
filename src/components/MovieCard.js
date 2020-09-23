@@ -3,12 +3,14 @@ import { connect } from "react-redux";
 import { handleMovieSelected } from "../actions";
 
 class MovieCard extends React.Component {
+  // function handle click on any moviecard component
   handleClick = () => {
     const { movie } = this.props;
     this.props.dispatch(handleMovieSelected(movie));
   };
 
   render() {
+    // destructuring movie from props
     const { movie } = this.props;
     return (
       <div className="movieCard" onClick={this.handleClick}>

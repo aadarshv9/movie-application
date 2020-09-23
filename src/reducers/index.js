@@ -9,6 +9,7 @@ const initialSearchState = {
   results: [],
 };
 
+// reducer to handle the searchList state
 export function searchList(state = initialSearchState, action) {
   switch (action.type) {
     case ADD_SEARCH_RESULT:
@@ -26,6 +27,7 @@ const initialMovieSelectedState = {
   isSelected: false,
 };
 
+// reducer to handle the movieSelected state
 export function movieSelected(state = initialMovieSelectedState, action) {
   switch (action.type) {
     case MOVIE_SELECTED:
@@ -45,6 +47,7 @@ export function movieSelected(state = initialMovieSelectedState, action) {
   }
 }
 
+// inbuilt combine reducer provided by redux to combine all reducers and this the final reducer i.e used by our redux store
 export default combineReducers({
   searchList,
   movieSelected,

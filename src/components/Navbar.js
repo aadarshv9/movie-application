@@ -9,12 +9,12 @@ class Navbar extends Component {
       searchText: "",
     };
   }
-
+  // function to handle search button click
   handleSearchClick = () => {
     const { searchText } = this.state;
     this.props.dispatch(handleMovieSearch(searchText));
   };
-
+  // function to handle change in input container
   handleSearchChange = (e) => {
     this.setState({
       searchText: e.target.value,

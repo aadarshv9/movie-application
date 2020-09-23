@@ -7,6 +7,7 @@ class SearchResult extends React.Component {
     const moviesToDisplay = searchList.results;
     return (
       <div id="searchResult">
+        {/* rendering the search result list */}
         {moviesToDisplay &&
           moviesToDisplay.map((movie) => (
             <MovieCard movie={movie} key={movie.id} />

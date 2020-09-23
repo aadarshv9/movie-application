@@ -26,4 +26,5 @@ function mapStateToProps({ movieSelected }) {
   };
 }
 
+// providing movieSelected state to our App component and by default dispatch function will also be passed as props to dispatch actions
 export default connect(mapStateToProps)(App);
